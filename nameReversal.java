@@ -6,5 +6,9 @@ public class nameReversal {
       System.out.print("Please enter your name: ");
       String nameInput = kbReader.nextLine();
       String nameReverse = "";
+      for (int i = nameInput.length() - 1; i >= 0; i--) {
+         nameReverse += nameInput.substring(i, i+1);
+      }
+      System.out.println("Your name in reverse would be: " + nameReverse.toLowerCase());
    }
 }
